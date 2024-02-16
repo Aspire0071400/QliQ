@@ -8,6 +8,8 @@ import android.os.Handler;
 import android.view.WindowManager;
 import android.widget.ImageView;
 
+import com.bumptech.glide.Glide;
+
 public class Splash extends AppCompatActivity {
     ImageView splash;
 
@@ -17,6 +19,7 @@ public class Splash extends AppCompatActivity {
         setContentView(R.layout.activity_splash);
 
         splash = findViewById(R.id.splash);
+        Glide.with(this).load(R.drawable.qliq_splash).fitCenter().placeholder(R.drawable.logo).into(splash);
 
         getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,WindowManager.LayoutParams.FLAG_FULLSCREEN);
         new Handler().postDelayed(new Runnable() {
@@ -26,8 +29,7 @@ public class Splash extends AppCompatActivity {
                 startActivity(i);
                 finish();
             }
-        },3000);
-
+        },2500);
 
     }
 }
