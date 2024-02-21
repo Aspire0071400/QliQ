@@ -42,4 +42,6 @@ dependencies {
 
     implementation("com.hbb20:ccp:2.7.0")
     implementation("com.github.bumptech.glide:glide:4.16.0")
+    implementation("de.hdodenhof:circleimageview:3.1.0")
+
 }

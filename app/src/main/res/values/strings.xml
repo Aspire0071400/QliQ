@@ -2,4 +2,16 @@
     <string name="app_name">QliQ</string>
     <string name="send_otp">Send OTP</string>
     <string name="enter_number">Enter Number</string>
+    <string name="didn_t_recieved_otp_yet_change_number">Didn\'t recieved OTP yet ? Change number</string>
+    <string name="verify">Verify</string>
+    <string name="enter_otp">Enter OTP</string>
+    <string name="enter_the_otp_received_on_your_number">Enter the OTP received on your number</string>
+    <string name="qliq_will_send_otp_to_your_number">QliQ will send OTP to your Number</string>
+    <string name="save_profile">Save Profile</string>
+    <string name="username">Username</string>
+    <string name="set_profile_picture">Set Profile Picture</string>
+    <string name="chats">Chats</string>
+    <string name="status">Status</string>
+    <string name="calls">Calls</string>
+    <string name="qliq">QliQ</string>
 </resources>

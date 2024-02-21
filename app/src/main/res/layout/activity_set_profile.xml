@@ -4,6 +4,80 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/white"
     tools:context=".SetProfile">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/set_profile_pic_iv"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_marginTop="100dp"
+        android:src="@drawable/ic_launcher_background"
+        app:civ_border_color="#000000"
+        app:civ_border_width="5dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/set_profile_picture"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintEnd_toEndOf="@+id/set_profile_pic_iv"
+        app:layout_constraintStart_toStartOf="@+id/set_profile_pic_iv"
+        app:layout_constraintTop_toBottomOf="@+id/set_profile_pic_iv" />
+
+    <EditText
+        android:id="@+id/set_username_edt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:ems="15"
+        android:hint="@string/username"
+        android:inputType="text"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView5" />
+
+    <Button
+        android:id="@+id/save_profile_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:backgroundTint="@color/black"
+        android:ems="8"
+        android:text="@string/save_profile"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/set_username_edt" />
+
+    <View
+        android:id="@+id/loadingbg_set_profile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/loading_back"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ProgressBar
+        android:id="@+id/progressBar_set_profile"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:indeterminateOnly="true"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="@+id/loadingbg_set_profile"
+        app:layout_constraintEnd_toEndOf="@+id/loadingbg_set_profile"
+        app:layout_constraintStart_toStartOf="@+id/loadingbg_set_profile"
+        app:layout_constraintTop_toTopOf="@+id/loadingbg_set_profile" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

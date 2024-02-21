@@ -2,4 +2,6 @@
 <resources>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+    <color name="loading_back">#80393939</color>
+    <color name="main_color">#008069</color>
 </resources>
