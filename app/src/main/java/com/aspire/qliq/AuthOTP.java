@@ -65,6 +65,7 @@ public class AuthOTP extends AppCompatActivity {
                     loadingBgOtpAuth.setVisibility(View.VISIBLE);
 
                     String codeRecieved = getIntent().getStringExtra("otp");
+                    assert codeRecieved != null;
                     PhoneAuthCredential cred = PhoneAuthProvider.getCredential(codeRecieved,enteredOtp);
                     signInWithPhoneAuthCredential(cred);
 
