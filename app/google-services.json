@@ -1,0 +1,30 @@
+{
+  "project_info": {
+    "project_number": "606148684154",
+    "firebase_url": "https://qliq-db85a-default-rtdb.asia-southeast1.firebasedatabase.app",
+    "project_id": "qliq-db85a",
+    "storage_bucket": "qliq-db85a.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:606148684154:android:90e05d56fac14c5e448ec3",
+        "android_client_info": {
+          "package_name": "com.aspire.qliq"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB1qoauqLi0WAPu7YbpdOX3VefTEkenE2c"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
