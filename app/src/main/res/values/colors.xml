@@ -4,4 +4,6 @@
     <color name="white">#FFFFFFFF</color>
     <color name="loading_back">#80393939</color>
     <color name="main_color">#008069</color>
+    <color name="unselected_text">#80FFFFFF</color>
+    <color name="transparent_color">#00FFFFFF</color>
 </resources>
