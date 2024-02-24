@@ -97,7 +97,7 @@ public class SetProfile extends AppCompatActivity {
 
                     progressBarSetProfile.setVisibility(View.VISIBLE);
                     loadingBgSetProfile.setVisibility(View.VISIBLE);
-                    //sendDataForNewUser();
+                    sendDataForNewUser();
                     progressBarSetProfile.setVisibility(View.GONE);
                     loadingBgSetProfile.setVisibility(View.GONE);
                     Intent i = new Intent(SetProfile.this,HomeScreen.class);
@@ -111,7 +111,7 @@ public class SetProfile extends AppCompatActivity {
 
     }
 
-    private void getDataForNewUser() {
+    private void sendDataForNewUser() {
 
         sendDataToRealtimeDatabase();
 
