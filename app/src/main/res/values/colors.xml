@@ -6,4 +6,5 @@
     <color name="main_color">#008069</color>
     <color name="unselected_text">#80FFFFFF</color>
     <color name="transparent_color">#00FFFFFF</color>
+    <color name="green">#64DD17</color>
 </resources>

@@ -51,5 +51,7 @@ dependencies {
     implementation("com.github.bumptech.glide:glide:4.16.0")
     implementation("de.hdodenhof:circleimageview:3.1.0")
     implementation("com.squareup.picasso:picasso:2.71828")
+    implementation("com.firebaseui:firebase-ui-firestore:8.0.2")
+
 
 }
