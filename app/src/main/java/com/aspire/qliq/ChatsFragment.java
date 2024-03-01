@@ -1,5 +1,6 @@
 package com.aspire.qliq;
 
+import android.content.Intent;
 import android.graphics.Color;
 import android.os.Bundle;
 
@@ -44,7 +45,8 @@ public class ChatsFragment extends Fragment {
         firebaseFirestore = FirebaseFirestore.getInstance();
         recyclerView = view.findViewById(R.id.recycler_view);
 
-        Query query = firebaseFirestore.collection("Users");
+        //Query query = firebaseFirestore.collection("Users");
+        Query query = firebaseFirestore.collection("Users").whereNotEqualTo("uid",auth.getUid());
         FirestoreRecyclerOptions<FirebaseRecyclerModel> allusername = new FirestoreRecyclerOptions.Builder<FirebaseRecyclerModel>().setQuery(query, FirebaseRecyclerModel.class).build();
 
         chatAdapter = new FirestoreRecyclerAdapter<FirebaseRecyclerModel, NoteViewHolder>(allusername) {
@@ -64,7 +66,11 @@ public class ChatsFragment extends Fragment {
                 holder.itemView.setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View v) {
-                        Toast.makeText(getActivity(),"Opened chat",Toast.LENGTH_SHORT).show();
+                        Intent i = new Intent(getActivity(),ChatRoom.class);
+                        i.putExtra("name",model.getName());
+                        i.putExtra("chatuid",model.getUid());
+                        i.putExtra("imgUri",model.getImage());
+                        startActivity(i);
                     }
                 });
 

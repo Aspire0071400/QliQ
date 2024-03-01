@@ -34,6 +34,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="32dp"
+        android:fontFamily="@font/space_mono_regular"
         android:text="Aspire"
         android:textColor="@color/black"
         android:textSize="20sp"

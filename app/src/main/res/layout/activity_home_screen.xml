@@ -27,6 +27,7 @@
                 android:id="@+id/QliQ_tv"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:fontFamily="@font/space_mono_regular"
                 android:text="@string/qliq"
                 android:textColor="@color/white"
                 android:textSize="20sp"

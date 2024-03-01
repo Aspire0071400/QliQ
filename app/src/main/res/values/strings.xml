@@ -19,4 +19,6 @@
     <string name="update_profile_picture">update_profile_picture</string>
     <string name="username_display">Username Display</string>
     <string name="user_status">User Status</string>
+    <string name="update">Update</string>
+    <string name="update_profile">Update Profile</string>
 </resources>
