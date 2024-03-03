@@ -68,7 +68,7 @@ public class ChatsFragment extends Fragment {
                     public void onClick(View v) {
                         Intent i = new Intent(getActivity(),ChatRoom.class);
                         i.putExtra("name",model.getName());
-                        i.putExtra("chatuid",model.getUid());
+                        i.putExtra("receiveruid",model.getUid());
                         i.putExtra("imgUri",model.getImage());
                         startActivity(i);
                     }

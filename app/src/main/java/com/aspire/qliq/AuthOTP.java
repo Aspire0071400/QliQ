@@ -84,7 +84,7 @@ public class AuthOTP extends AppCompatActivity {
                     progressBarOtpAuth.setVisibility(View.GONE);
                     loadingBgOtpAuth.setVisibility(View.GONE);
                     Toast.makeText(getApplicationContext(),"LogIn Success",Toast.LENGTH_SHORT).show();
-                    Intent i = new Intent(AuthOTP.this, SetProfile.class);
+                    Intent i = new Intent(AuthOTP.this, SetProfile.class);//getappcontext try catch.
                     startActivity(i);
                     finish();
                 }else{
