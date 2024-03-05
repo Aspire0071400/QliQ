@@ -21,7 +21,7 @@ Android ChatA-App made using java. The UI is similar to WhatsApp, provides basic
 
 ## Libraries Integrated:
 * [ConuntryCodePicker](https://github.com/hbb20/CountryCodePickerProject)
-* [FirebaseUI for Android](https://firebaseopensource.com/projects/firebase/firebaseui-android/)
+* [FirebaseUI for Firestore Android](https://firebaseopensource.com/projects/firebase/firebaseui-android/)
 
 
 
