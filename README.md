@@ -1,6 +1,6 @@
 # QliQ
 
-Android ChatA-App made using java. The UI is similar to WhatsApp, provides basic one-to-one chat feature along with user profile and username update.
+Android Chat-App made using java. The UI is similar to WhatsApp, provides basic one-to-one chat feature along with user profile and username update.
 
 
 ## feature:
